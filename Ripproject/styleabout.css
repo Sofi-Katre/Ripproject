@@ -1,0 +1,249 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+.topabout{
+    margin: 26vh 0vh 4vh 4vh; /*верх право низ лево*/ 
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: auto 2fr;
+    gap: 4vh 10vh;
+}
+.topinfoab{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.toptxtab{
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2vh;
+    margin: 10vh 2vh 12vh 0vh;
+}
+.txtab1{
+    grid-row: 1;
+    font-size: 1.4rem;
+}
+.txtab2{
+    grid-row: 2;
+    font-size: 1.4rem;
+}
+.topphotoab{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/charch.png');
+    border-radius: 150px 0px 0px 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+.about{
+    margin: 8vh 4vh 20vh 0vh; /*верх право низ лево*/ 
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 15vh;
+}
+.photoab{
+    grid-column: 1;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/autore.png');
+    border-radius: 0px 150px 150px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+.antxtautore{
+    grid-column: 2;
+    margin: 10vh 0vh 16vh 0vh; /*верх право низ лево*/ 
+}
+.txtautoreab{
+    font-size: 1.4rem;
+}
+.red{
+    font-size: 1.4rem;
+    color: red;
+}
+
+
+/* Adaptive versition*/
+
+/*width < 1085px*/
+
+@media (max-width:1285px) {
+    .topabout{
+        margin: 20vh 0vh 4vh 4vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 1.2fr 1.5fr;
+        grid-template-rows: auto auto;
+        gap: 4vh 8vh;
+    }
+    .txtab1{
+        grid-row: 1;
+        font-size: 1.2rem;
+    }
+    .txtab2{
+        grid-row: 2;
+        font-size: 1.2rem;
+    }
+    .about{
+        margin: 8vh 4vh 20vh 0vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 1.5fr 1.2fr;
+        gap: 10vh;
+    }
+    .txtautoreab{
+        font-size: 1.2rem;
+    }
+    .red{
+        font-size: 1.2rem;
+        color: red;
+    }
+    .topphotoab{
+        border-radius: 200px 0px 0px 200px;
+    }
+    .photoab{
+        border-radius: 0px 200px 200px 0px;
+    }
+}
+
+/*width < 890px*/
+
+@media (max-width:890px) {
+    .topabout{
+        margin: 20vh 0vh 2vh 4vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto 1fr 1.3fr;
+        gap: 4vh 0vh;
+    }
+    .toptxtab{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 2vh;
+        margin: 4vh 18vh 4vh 0vh;
+    }
+    .topphotoab{
+        grid-column: 2;
+        grid-row: 3;
+        border-radius: 250px 0px 0px 250px;
+        object-fit: cover;
+    }
+    .about{
+        margin: 2vh 0vh 15vh 0vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        grid-template-rows: 1fr 1.5fr;
+        gap: 4vh;
+    }
+    .photoab{
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 0px 250px 250px 0px;
+        object-fit: cover;
+    }
+    .antxtautore{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        margin: 4vh 18vh 4vh 4vh; /*верх право низ лево*/ 
+    }
+}
+
+/*width < 690px*/
+
+@media (max-width:690px) {
+    .topabout{
+        margin: 20vh 0vh 2vh 4vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: auto 1fr 1.3fr;
+        gap: 4vh 0vh;
+    }
+    .topphotoab{
+        object-fit: cover;
+    }
+    .photoab{
+        object-fit: cover;
+    }
+    .about{
+        margin: 2vh 0vh 15vh 0vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        gap: 4vh;
+    }
+}
+
+/*width < 650px*/
+
+@media (max-width:690px) {
+    .topabout{
+        margin: 20vh 0vh 2vh 4vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 4vh 0vh;
+    }
+    .about{
+        margin: 2vh 0vh 15vh 0vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        gap: 4vh;
+    }
+    .topphotoab{
+        object-fit: cover;
+    }
+    .photoab{
+        object-fit: cover;
+    }
+}
+
+/*width < 500px*/
+
+@media (max-width:500px) {
+    .topabout{
+        margin: 15vh 0vh 1vh 4vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 1vh 0vh;
+    }
+    .toptxtab{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 1vh;
+        margin: 1vh 10vh 4vh 0vh;
+    }
+    .about{
+        margin: 2vh 0vh 15vh 0vh; /*верх право низ лево*/ 
+        display: grid;
+        grid-template-columns: 9fr 1fr;
+        grid-template-rows: 1fr 0.7fr;
+        gap: 4vh;
+    }
+    .topphotoab{
+        object-fit: cover;
+    }
+    .photoab{
+        object-fit: cover;
+    }
+    .antxtautore{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        margin: 4vh 8vh 4vh 4vh; /*верх право низ лево*/ 
+    }
+}

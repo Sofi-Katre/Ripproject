@@ -1,0 +1,294 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+.containerlinks{
+	display: grid;
+	grid-template-rows: 1fr auto;
+	margin: 20vh 20vh 10vh 20vh; /*верх право низ лево*/ 
+}
+.toplinks{
+	grid-row: 1;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 3vh;
+	margin-bottom: 8vh;
+}
+.heigthtitle{
+	grid-row: 1;
+	font-size: 1.7rem;
+	text-align: center;
+}
+.subtitle{
+	grid-row: 2;
+	font-size: 1.4rem;
+	text-align: center;
+}
+.mainlinkscontainer{
+	grid-row: 2;
+	display: grid;
+	gap: 6vh;
+}
+.linksform{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	background-color: #F4EFEF;
+	padding: 3% 3% 3% 0%;
+	gap: 3vh;
+}
+.linksphoto{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/teacherrip.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linksphoto1{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/star.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linksphoto2{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/God.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linksphoto3{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/ural.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linksphoto4{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/Flakse.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linksphoto5{
+	grid-column: 1;
+	width: 12vh;
+	height: 12vh;
+    background-color: chocolate;
+    mix-blend-mode: multiply;
+    background-image: url('./imeges/linksimg/nekrople.png');
+    border-radius: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+	margin: 0 auto;
+}
+.linkstitle{
+	grid-column: 2;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 2vh;
+}
+.linkstxt{
+	grid-column: 2;
+	font-size: 1.2rem;
+	margin-bottom: 2vh;
+}
+.links{
+	grid-column: 3;
+	display: flex;
+	justify-content: flex-start;
+	align-items: end;
+}
+.links a{
+	font-size: 1.2rem;
+	color: darkgrey;
+	font-style: italic;
+	margin-right: 2vh;
+}
+.linksicon{
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+	background-color: darkgrey;
+	background-image: url('./imeges/linksimg/arrow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+}
+
+/* Adaptive versition*/
+
+/*width < 1200px*/
+
+@media (max-width:1200px) {
+	.linksform{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		background-color: #F4EFEF;
+		padding: 3% 3% 3% 3%;
+		gap: 2vh;
+	}
+	.linkstitle{
+		grid-column: 2;
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin-bottom: 2vh;
+	}
+	.linkstxt{
+		grid-column: 2;
+		font-size: 1.2rem;
+		margin-bottom: 2vh;
+	}
+	.links{
+		grid-column: 2;
+		display: flex;
+		justify-content: flex-end;
+		align-items: end;
+	}
+}
+
+/*width < 1000px*/
+
+@media (max-width:1000px) {
+	.containerlinks{
+		display: grid;
+		grid-template-rows: 1fr auto;
+		margin: 20vh 10vh 10vh 10vh; /*верх право низ лево*/ 
+	}
+	.linksphoto{
+		margin-top: 7vh;
+	}
+	.linksphoto1{
+		margin-top: 7vh;
+	}
+	.linksphoto2{
+		margin-top: 7vh;
+	}
+	.linksphoto3{
+		margin-top: 7vh;
+	}
+	.linksphoto4{
+		margin-top: 7vh;
+	}
+	.linksphoto5{
+		margin-top: 7vh;
+	}
+}
+
+/*width < 740px*/
+
+@media (max-width:740px) {
+	.linksform{
+		display: grid;
+		grid-template-rows: auto auto 1fr auto;
+		background-color: #F4EFEF;
+		padding: 3% 3% 3% 3%;
+		gap: 2vh;
+	}
+	.txtform{
+		grid-column: 1 / span 2;
+		text-align: center;
+	}
+	.linkstitle{
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+	.linksphoto{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin-top: 1vh;
+	}
+	.linksphoto1{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin-top: 1vh;
+	}
+	.linksphoto2{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin-top: 1vh;
+	}
+	.linksphoto3{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin-top: 1vh;
+	}
+	.linksphoto4{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+	}
+	.linksphoto5{
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin-top: 1vh;
+	}
+	.linkstxt{
+		grid-column: 1 / span 2;
+		grid-row: 3;
+	}
+	.links{
+		grid-column: 1 / span 2;
+		grid-row: 4;
+	}
+}
+
+/*width < 540px*/
+
+@media (max-width:540px) {
+	.containerlinks{
+		margin: 15vh 5vh 10vh 5vh; /*верх право низ лево*/ 
+	}
+	.toplinks{
+		grid-row: 1;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		gap: 3vh;
+		margin-bottom: 4vh;
+	}
+	.heigthtitle{
+		grid-row: 1;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	.subtitle{
+		grid-row: 2;
+		font-size: 1rem;
+		text-align: center;
+	}
+}
